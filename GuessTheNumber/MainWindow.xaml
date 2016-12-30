@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GuessTheNumber"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Guess The Number Game!" Height="350" Width="525">
     <Grid>
-        
+        <Label x:Name="lblGiveNumber" Content="Please input a number:" HorizontalAlignment="Left" Margin="5,28,0,0" VerticalAlignment="Top" Width="318"/>
+        <RadioButton x:Name="rbEasy" Content="Easy (1-10)" GroupName="Difficulty" HorizontalAlignment="Left" Margin="28,110,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbMedium" Content="Medium (1-100)" GroupName="Difficulty" HorizontalAlignment="Left" Margin="28,141,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbHard" Content="Hard (1-1000)" GroupName="Difficulty" HorizontalAlignment="Left" Margin="28,171,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbVeryHard" Content="Very Hard (1-10000)" GroupName="Difficulty" HorizontalAlignment="Left" Margin="29,200,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDifficulty" Content="Choose your difficulty:" HorizontalAlignment="Left" Margin="5,70,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtGuessNumber" PreviewTextInput="txtGuessNumber_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="155,29,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <Button x:Name="btnValidate" IsEnabled="False" Content="Validate" HorizontalAlignment="Left" Margin="334,29,0,0" VerticalAlignment="Top" Width="75" Click="btnValidate_Click"/>
+        <Button x:Name="btnNewGame" Content="New Game" HorizontalAlignment="Left" Margin="166,239,0,0" VerticalAlignment="Top" Width="139" Click="btnNewGame_Click"/>
+        <Label x:Name="lblNumberWas" Content="The number was:" HorizontalAlignment="Left" Margin="240,71,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label x:Name="lblGeneratedNumber" HorizontalAlignment="Left" Margin="243,108,0,0" VerticalAlignment="Top" Width="223" Height="115" BorderThickness="0" FontSize="72"/>
+        <TextBlock x:Name="lblMessage" HorizontalAlignment="Left" Margin="13,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="447" Height="29" FontWeight="Bold"/>
     </Grid>
 </Window>
