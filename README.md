@@ -1,3 +1,3 @@
 # Guess The Number!
 
-An WPF application simuating the Guess A Number! game
+An WPF application simulating the Guess A Number! game
